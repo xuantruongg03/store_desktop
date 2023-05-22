@@ -1,0 +1,17 @@
+﻿<Window x:Class="StoreCMS.Find_Product"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StoreCMS"
+        mc:Ignorable="d"
+        Title="Tìm kiếm sản phẩm" Height="450" Width="800">
+    <Grid>
+        <Label Content="Tìm kiếm theo tên" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="101,64,0,0" VerticalAlignment="Top" Height="31"/>
+        <TextBox Name="find" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="242,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253" Height="31"/>
+        <DataGrid Name="GResult" AutoGeneratingColumn="GResult_AutoGeneratingColumn" Margin="31,130,25,22" SelectionChanged="Selected_GridView"/>
+        <Button Content="Tìm" HorizontalAlignment="Left" Height="31" Margin="542,64,0,0" VerticalAlignment="Top" Width="106" Click="Find"/>
+        <Button Name="edit" Content="Sửa" HorizontalAlignment="Left" Height="31" Margin="669,64,0,0" VerticalAlignment="Top" Width="88" Click="Edit"/>
+
+    </Grid>
+</Window>
